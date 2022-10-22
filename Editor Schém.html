@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/editorschem.css">
+		<title>
+			Navrhovaný systém EAGLE
+		</title>
+	</head>
+	<body>
+		<img src="logo/logodopravna.png" alt="logodopravna" class="logodopravnac">
+		
+		<h1 class="logo">
+			<a href="index.html">
+				<center>
+				Manual pre<br>
+			 <span class="eagle">
+				AUTODESK 
+				
+					EAGLE
+				</center>
+			</span>
+
+		</a>
+		</h1>
+		<nav class="undermenu">
+			<div class="container">
+			<section>
+			  <a class="y" href="umiestenie objektov na plochu.html">Umiestnenie objektov na plochu</a>
+			  <a class="y" href="kontrola návrhu schémy.html">Kontrola návrhu schémy</a>
+			</section>
+			</div>
+		  </nav>
+		<div>
+			<details>
+				<summary></summary>
+				<nav class="menu">
+				  <a href="Návrhový systém EAGLE.html">Navrhovaný systém EAGLE</a>
+				  <a href="Editor schém.html">Editor schém</a>
+				  <a href="Editor plošného spoja.html">Editor plošného spoja</a>
+				  <a href="Výstupy z návrhového systému Eagle.html">Výstupy z návrhového systému</a>
+				  <a href="Editor knižnice súčiastok.html">Editor knižnice súčiastok</a>
+				  <a href="contact.html">Kontakt</a>
+				</nav>
+			</details>
+		</div>
+			<h1 class="undertitle">
+				editor schém
+			</h1>
+		  <main>
+			<div class="firsttext">
+				Pre bežnú prácu postačí používať Panel príkazov
+				<br><br>
+				<li>
+					Nastavenie rastru (mriežky) a jeho zobrazenie na obrazovke
+				</li>
+					<div>
+						Použijeme menu View – Grid - nastavíme zobrazenie mriežky Display – On a Style – Dots (body), pričom jednotky v inch (palcoch) sa doporučuje ponechať, (konkrétne napr.0,05 inch = 1,27 mm alebo na 0,1 inch = 2,54 mm) ,vzhľadom na náväznosť na editor dosiek, kde rozmery súčiastok sú v palcových jednotkách (inch, mil.); 1 mil = 0,001 inch = 0,025mm
+						<br> Pozn. Pri prepnutí rastra na iný, ktorý „nekorešponduje“ s pôvodným sa piny ocitnú mimo raster a nie je ich možné vzájomne prepojiť.
+					</div>
+				
+			</div>
+			<div class="secondtext">
+				<li>
+					Ohraničenie pracovnej plochy
+				</li>
+				<div>
+					Ohraničením pracovnej plochy predídeme neskorším problémom pri záverečnej grafickej úprave budúcej schémy. <br> Zvolený formát vyberáme z knižnice a umiestnime na pracovnú plochu týmto spôsobom:
+					<br>ADD - FRAMES - DIN A4-L - OK – ĽTM (Ľavé Tlačidlo Myši) – ESC, (pričom rámček umiestnime na súradnicový kríž).
+					<br>
+					Teraz je vhodné si súbor uložiť cez File – Save as – napr. Riadeny usmernovac (bez diakritiky). Tento názov bude zobrazený v titulnom bloku našej schémy.
+				</div>
+			</div>
+			<div class="thirdtext">
+				<li>
+					Eagle má množstvo štandardných knižníc dodávaných priamo s programom
+				</li>
+				<div>
+					možno ich vidieť aj v Control Paneli - nachádzajú sa v priečinku Libraries s príponou .lbr. <br> Pre použitie knižnice pri vyhľadávaní musí byť knižnica zapnutá (zelený krúžok). <br> Knižnice môžeme zapínať naraz všetky cez kontextové menu pre Libraries voľbou Use All; príp. vypínať všetky naraz voľbou Use None. <br> Pre zapnutie/vypnutie jednej knižnice kliknite priamo na jej symbol šedého/zeleného krúžku.
+				</div>
+			</div>
+			<div class="quadtext">
+				<span>
+					Pomocou ADD -
+				</span>
+				zobrazíme knižnicu súčiastok, z ktorej postupne pridávame súčiastky na určenú plochu (obvykle začíname s najzložitejšou schematickou značkou). <br> Ak nevieme presné označenie, môžeme si pomôcť hviezdičkami, napr. ak použijeme v dialógovom okne ADD pole Search/Hľadať môžeme zadať *7400*.
+Odpor hľadáme napr. zadaním - resistor, kondenzátor – capacitor, diódu – diode, napájacie svorky – VDD alebo +12V, zem – GND, atď. <br> Pokiaľ nenájdeme potrebnú súčiastku v knižniciach , môžeme si súčiastku aj sami vytvoriť vo vlastnej knižnici.
+
+			</div>
+			<div class="fifthtext">
+				<li>
+					Editácia prvkov schémy
+				</li>
+				Je potrebné presne dodržať označenie každej súčiastky (Name, napr. R7) s jej hodnotou (Value, napr. 12K).
+				<img src="images/tutorial.png" alt="tutorial">
+			</div>
+			<div class="sixthtext">
+				V prípade križovania vodičov môžeme pridať uzol    (JUNCTION). <br><br>	Poznámka: pri ukončení spoja na inom spoji sa automaticky zobrazí spoj (junction). <br><br>	Môžete tiež využiť napájacích symbolov k sprehľadneniu schém, GND, +5V, +12V, ... <br><br> Súčiastky a čiary pripojené k týmto symbolom sa automaticky prepoja. <br><br>
+Pozor na Integrované obvody, aj tieto súčiastky majú väčšinou skryté napájanie, ktoré zobrazíte Invoke (názvy označené * už sú v schéme). <br>
+Pokiaľ hľadáte v schéme nejakú súčiastku, tak môžete kliknúť na Show object, napísať jej meno a dať Enter, pokiaľ taká súčiastka existuje, tak sa zosvetlí.
+
+			</div>
+
+		  </main>
+		  <br><br><br><br><br><br>
+		  <footer>
+			<div class="copyright">
+				©2023 Goldmann. All Rights Reserved.<br>
+				<span>
+					Stredná priemyselná škola dopravná<br>
+					Košice
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>

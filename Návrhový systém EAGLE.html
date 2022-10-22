@@ -1,0 +1,169 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="styles/navrhovanysystemeagle.css">
+		<title>
+			Navrhovaný systém EAGLE
+		</title>
+	</head>
+	<body>
+		<img src="logo/logodopravna.png" alt="logodopravna" class="logodopravnac">
+		
+		<h1 class="logo">
+			<a href="index.html">
+				
+				Manual pre<br>
+			 <span class="eagle">
+				AUTODESK 
+				
+					EAGLE
+				
+			</span>
+
+		</a>
+		</h1>
+		<nav class="undermenu">
+			<div class="container">
+			<section>
+			  <a class="y" href="zpasmz.html">Založenie pracovného adresára s menom žiaka</a>
+			</section>
+			</div>
+		  </nav>
+		  <div>
+            <details>
+                <summary></summary>
+                <nav class="menu">
+                  <a href="Editor schém.html">Editor schém</a>
+                  <a href="Editor plošného spoja.html">Editor plošného spoja</a>
+                  <a href="Výstupy z návrhového systému Eagle.html">Výstupy z návrhového systému</a>
+                  <a href="Editor knižnice súčiastok.html">Editor knižnice súčiastok</a>
+                  <a href="contact.html">Kontakt</a>
+                </nav>
+            </details>
+        </div>
+        
+<br><br><br>
+		  <div class="undertitle">
+			Navrhovaný systém EAGLE
+		</div>
+		  <center>
+		  <div class="firsttext">
+			<p>
+				Pri práci musí byť neustále spustený Control panel, ktorý stráži konzistenciu medzi schémou a doskou, t.j. prenášanie zmien zo schémy do dosky, otváranie knižníc, atď. V Control paneli sa zakladajú aj nové projekty a označujeme ktorý projekt je aktívny.
+			</p>
+				<br><br>
+		  </div>
+		  <br><br>
+		  <div class="secondtext">
+			<br>
+			<span class="versions">
+				EAGLE je program pre:
+			</span>
+			<br><br>
+			<li>
+				1.kreslenie elektronických schém:
+			</li> 
+			<img id="obraz" src="images/eleschema.png" alt="Eletronická schéma" class="eleschema">
+
+
+			<div id="closebutton" class="modal">
+  				<span class="close">&times;</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+			</div>
+			<script src="js/zoom.js"></script>
+				<li>
+				2. návrh dosiek plošných spojov DPS (angl. PCB - Printed circuit Board):
+			</li>
+				<img id="obrazone" src="images/eagleboardschema.png" alt="ebs" class="eleschema">
+				<div id="closebuttonone" class="modal">
+					<span class="closeone">&times;</span>
+					<img class="modal-content" id="img02">
+					<div id="caption"></div>
+			  </div>
+			  <script src="js/zoomtwo.js"></script>
+				<br>
+			<li>
+				3. tvorbu výkresov a vygenerovanie údajov pomocou CAM procesora → pre výrobu dosky ploš. spoja
+			</li>
+			<br>
+			<p>
+				Taktiež je možné aj trojrozmerné zobrazenie plošného spoja, ale k tomu je potrebné doinštalovať freewarový program Eagle 3D (na prevod plošného spoja do textovej podoby potrebného pre generovanie skutočného obrazu plošného spoja)
+			</p>
+		</div>
+		  </center>
+<br> <br><br>
+		  <center>
+			<div class="thirdtext">
+				<br>
+				<span class="versions">
+					EAGLE sa skladá z týchto hlavných modulov:
+				</span>
+				<br><br>
+				<li>
+					Editor schém:
+				</li>
+
+				<p>
+					modul pre kreslenie schématických zapojení. Elektrická kontrola správnosti nakreslenej schémy. Jedným povelom sa prechádza do návrhu dosky plošných spojov, pričom si program automaticky generuje potrebné informácie o schéme (netlist a partlist), spätnej anotácie schéma-doska a naopak.
+				</p>
+				<br><br>
+				<li>
+					Editor plošných spojov: 
+				</li>
+				<p>
+				je základným modulom programu Eagle a je súčasne kompletným programom pre interaktívny návrh plošných spojov, ktorý vyniká jednoduchosťou obsluhy. Max. 16 vrstiev dosky, palcové i metrické jednotky, návrh z/bez netlistu (Eagle, Orcad, Pads). Užívateľsky definovaný DRC (Design Rule Check - kontrola pravidiel návrhu dosky. Kontroluje: najmenšiu medzeru medzi spojmi, prekrytie spojov, spoje ktoré nie sú ťahané v násobku uhlu 45°, priemery plôšok, vrtákov, šírku spoja, objekty mimo raster, ... ). Knižnica súčiastok s možnosťou doplňovania a úprav. Podporuje SMD a montáž na oboch stranách dosky. Automatické vyplňovanie medených plôch. Výstupy na tlačiarne, plotre, fotoplotre a vŕtačku.
+				</p>
+				<br><br>
+				<li>
+					Autorouter:
+				</li>
+				<p>
+					prepojí automaticky vzdušné spoje podľa nastavených parametrov. Premiestňuje nevhodne položené spoje (rip-up, re-route). Pracuje na celej doske, či iba na jednom spoji. Vyžaduje k svojej činnosti modul Layout Editor!
+				</p>
+				<br><br>
+				<li>
+					CAM procesor:
+				</li>
+				<p>
+					slúži pre vygenerovanie údajov potrebných pre výrobu dosky plošných spojov, údaje pre osadzovací automat, údaje pre plotter, NC vŕtačku a pod.
+				</p>
+				<br><br>
+				<li>
+					Editor knižníc súčiastok: 
+				</li>
+				<p>
+					slúži pre úpravu už dodaných knižníc súčiastok alebo pre tvorbu vlastných súčiastok s vlastnými symbolmi a puzdrami.
+				</p>
+			</div>
+<br><br>
+			<div class="quadtext">
+				<li>
+					<span class="spaneag">
+						EAGLE Súbory
+					</span>
+					(Typy súborov používaných v EAGLE)
+				</li>
+				<p>
+					Schéma&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSchematic Editor&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *.sch	(schematic)<br>
+					Doska plošných spojov&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLayout Editor  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*.brd	(board)<br>
+					Knižnica&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLibrary Editor &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*.lbr	(library)<br>
+					Scriptový súbor&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText Editor &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*.scr (script) súbor s inštrukciami<br>
+					Program.jazyk užívateľa&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText Editor &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*.ulp (User Language Program)<br>
+					Súbor PARTLIST&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText Editor &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*.bom (bill of material – zoznam materiálu)<br>
+
+				</p>
+			</div>
+		  </center>
+		 
+
+		  <br><br>
+		  <div class="copyright">
+			©2023 Goldmann. All Rights Reserved.<br>
+			<span>
+				Stredná priemyselná škola dopravná<br>
+				Košice
+			</span>
+		</div>
+	</body>
+</html>
